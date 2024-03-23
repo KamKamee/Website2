@@ -25,7 +25,9 @@ h1 {
     position: relative;
     margin-bottom: 80px;
 }
-
+p{
+    text-align: justify;
+}
 h1::after {
     content: '';
     width: 150px;
@@ -146,8 +148,9 @@ margin-right: 100px;
     top: 0;
     left: 50%;
     margin-left: 31px;
-    animation: moveline 6s linear forwards;
+    animation: moveline 15s linear forwards;
 }
+
 @keyframes moveline{
     0%{
         height: 0;
