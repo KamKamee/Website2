@@ -59,6 +59,21 @@ span{
     z-index: -1;
     transition: 0.5s;
 }
+.em-tech {
+    background: linear-gradient(to right, #ff105f, navy, skyblue);
+    -webkit-background-clip: text;
+    color: transparent;
+    color: skyblue; /* Initial color */
+    animation: glow 1.5s ease-in-out infinite alternate; /* Apply animation */
+}
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px navy; /* Start with a subtle glow */
+    }
+    100% {
+        text-shadow: 0 0 20px navy, 0 0 30px #ff105f, 0 0 40px #ff105f, 0 0 50px skyblue; /* Increase glow intensity */
+    }
+}
 button:hover span{
     width: 100%;
 }
